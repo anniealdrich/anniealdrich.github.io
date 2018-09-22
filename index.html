@@ -1,18 +1,26 @@
-<!doctype html>
+<!doctype html lang="en">
 <html ⚡>
 <head>
-  <meta charset="utf-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <title>AA COLLECTED WORKS</title>
-  <link rel="canonical" href="https://bad.house">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<meta charset="utf-8">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+<title>Annie Aldrich, Architect</title>
+<link rel="canonical" href="https://annelise.info">
+<meta name="description" content="We are two architects working to build the leanest, most resilient spaces possible. No magic, no fuss. Let's build better.">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
 <style amp-custom>
-html, body {
+html,body {
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color:#16161d;
+  text-rendering:optimizeLegibility;
+  background:#f7f7fa;
+  overflow-y:scroll;
 }
 a{
   color:inherit;
@@ -24,146 +32,341 @@ a:hover {
   color: #16161d;
 }
 ::selection {
-  background-color: rgba(22,22,29,0.99);
+  background-color: #eee;
 }
 ::-moz-selection {
-  background-color: rgba(22,22,29,0.99);
+  background-color: #eee;
 }
-p{
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 30px;
-  z-index:10;
-  width:80%;
-  max-width:700px;
-}
-h1{
-font-size: 36px;
-font-weight: bold;
-line-height: 42px;
-z-index:10;
-width:80%;
-max-width:700px;
-margin:0;
-padding:0;
-}
-p:hover{
-  transition: filter 1s;
-  transition-timing-function: ease-in-out;
-}
-p.uppercase {
-    text-transform: uppercase;
-    text-align:center;
-}
-article {
-  overflow-y:scroll;
-  overflow-x:hidden;
-  scroll-snap-type: y mandatory;
-  position: absolute;
-  top:0;
-  bottom:0;
-  left: 0;
-  right: 0;
-  background:#eee;
-  height:100vh;
-  width:100vw;
-}
-section {
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  height:100vh;
-  border-bottom:3px solid #eee;
-}
-section img{
-    object-fit: cover;
+.spacer{
+  height:56vh;
 }
 header {
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  top: 0;
-  padding: 0;
+  top:0;
+  z-index:20;
+  width:13vh;
 }
 nav{
-  position:fixed;
-  right:5vw;
-  padding-right:1.2vh;
-  padding-top:29vh;
-  z-index:20;
 }
-.navChild{
-  position:relative;
+section{
+  margin:0;
+  padding:0;
+}
+article{
+  margin:0;
+  padding:0;
+  background:#f7f7fa;
+}
+.title{
+  position:absolute;
+  top:3.8vh;
+  width:calc(100% - 20vh);
+  font-size: 4.4vh;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin:0 10vh;
+  padding:0;
+  text-align: center;
   z-index:10;
-  height:1.2vh;
-  width:1.2vh;
-  outline:none;
-  padding:2vh;
+  color:#fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
-.navChild:hover .navButton, .navChild:focus .navButton{
-  background-color:#ff4b33;
-  filter:blur(.5px);
-  transition: filter 1s;
+.titleThin{
+  font-weight:300;
+}
+h1{
+  font-size: 2vh;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin:0;
+  padding:0;
+}
+p{
+  font-size: 2vh;
+  margin:18vh auto;
+  width:92%;
+  max-width:800px;
+  font-weight:300;
+  color:#16161d;
+}
+p.uppercase {
+    text-transform: uppercase;
+}
+amp-img.cover img {
+  object-fit: cover;
+}
+.sectionTitle{
+  height:6.5vh;
+  line-height:6.5vh;
+  text-align: center;
+  vertical-align: middle;
+  width:100%;
+  margin:0;
+  color:#fff;
+  background:none;
+  border-top:none;
+  border-bottom: .5px solid #f7f7fa;
+  border-left: calc(50vw - 14vh) solid transparent;
+	border-right: calc(50vw - 14vh) solid transparent;
+  box-sizing: border-box;
+  z-index:10;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+section[expanded] > .sectionTitle {
+  border:none;
+  background:#f7f7fa;
+  color:#16161d;
+  border-bottom: .5px solid #16161d;
+  border-left: calc(50vw - 14vh) solid transparent;
+  border-right: calc(50vw - 14vh) solid transparent;
+  outline:none;
+}
+section:hover > .sectionTitle{
+  background:#f7f7fa;
+  color:#16161d;
+  outline:none;
+}
+.sectionTitle:focus{
+  outline:none;
+}
+figure {
+  margin:18vh auto;
+  width:92%;
+  max-width:800px;
+}
+figure img{
+  border-radius:3px;
+}
+figcaption{
+  font-size: 14px;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top:8px;
+  font-weight: 700;
+  opacity:0;
+  transition: all .1s;
   transition-timing-function: ease-in-out;
 }
-.navButton{
-  margin:0 auto;
-  height:1.2vh;
-  width:1.2vh;
-  border-radius:1.2vh;
- background-color:#fff;
- filter:blur(.6px);
+figure:hover figcaption{
+  opacity:1;
 }
-amp-img{
-  z-index:0;
-  -webkit-touch-callout: none;
+amp-sidebar{
+  width: 80vw;
+  background:#fff;
+  margin:0;
+  padding:0;
+}
+button {
+    position:fixed;
+    top:0;
+    left:0;
+    background:none;
+    border: none;
+    width:13vh;
+    height:13vh;
+    display: inline-block;
+    outline:none;
+    z-index:50;
+}
+button svg{
+    fill:#fff;
+    transition:all .3s;
+    cursor:pointer;
+}
+button:hover svg{
+     transform: rotate(90deg);
+}
+button.clicked svg{
+    transform:rotate(90deg);
+    transition:all .3s;
+}
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
   -webkit-user-select: none;
-   -khtml-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color:#16161d;
+  padding:3vh;
+}
+.container:hover {
+  background-color: #eee;
+}
+.contact {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  padding:3vh;
+}
+.cv {
+  position: absolute;
+  bottom:8vh;
+  width:100%;
+}
+.background{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100vh;
+}
+.background img{
+  object-fit: cover;
+  outline:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 </style>
-  
 <script type="application/ld+json">{
   "@context": "http://schema.org/",
   "@type": "ProfessionalService",
   "additionalType":"http://www.productontology.org/id/Architect",
-
-  "name": "ANNELISE ALDRICH",
-  "description":"COLLECTED WORK",
-  "image": "https://bad.house/img/01.jpg",
-  "email":"aldrich.annelise@gmail.com",
-  "telephone":"206 714 3870",
-  "url":"annelise.info"
+  "name": "BADHOUSE Architects",
+  "description":"We are two architects working to build the leanest, most resilient spaces possible. No magic, no fuss. Let's build better.",
+  "logo":"https://bad.house/img/wordmark.png",
+  "image": "https://bad.house/img/snippet.jpg",
+  "hasMap":"https://goo.gl/maps/TneXNzo8v2z",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "47.552066",
+    "longitude": "-122.389032"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Seattle",
+    "addressRegion": "WA",
+    "postalCode": "98136",
+    "streetAddress": "4409 SW Findlay Street"
+  },
+  "email":"info@bad.house",
+  "telephone":"434 218 2207",
+  "url":"https://bad.house"
 }</script>
 </head><body>
-<nav>
-  <a href="#s1"><div class="navChild"><div class="navButton"></div></div></a>
-  <a href="#s2"><div class="navChild"><div class="navButton"></div></div></a>
-  <a href="#s3"><div class="navChild"><div class="navButton"></div></div></a>
-  <a href="#s4"><div class="navChild"><div class="navButton"></div></div></a>
-  <a href="#s5"><div class="navChild"><div class="navButton"></div></div></a>
-  <a href="#s6"><div class="navChild"><div class="navButton"></div></div></a>
-  <a href="#s7"><div class="navChild"><div class="navButton"></div></div></a>
-</nav >
 
-<article>
-  <section id="s1"><h1>Welcome.</h1><br><p class="uppercase">Collected Works</p></section>
-  <section id="s2"><p class="uppercase">ARCHITECTURE</p><amp-img alt="A view of the sea" src="img/01.jpg" layout="fill"></amp-img></section>
-  <section id="s3"><p class="uppercase">LANDSCAPE</p><amp-img alt="A view of the rocks" src="img/02.jpg" layout="fill"></amp-img></section>
-  <section id="s4"><p class="uppercase">LANGUAGE</p><amp-img alt="A view of the sea" src="img/01.jpg" layout="fill"></amp-img></section>
-  <section id="s5"><p class="uppercase">CRAFT</p><amp-img alt="A view of the rocks" src="img/02.jpg" layout="fill"></amp-img></section>
-  <section id="s6"><p class="uppercase">SENSE</p></section>
-  <section id="s7"><p class="uppercase">SHOWS</p><p><br>
-    This will be a short paragraph of text about myself. <br><br><br><br>
-This will be a longer text about what i want to do in the world, why i want to do it, and how i want to achieve it.
+<amp-sidebar id="sidebar1" layout="nodisplay" side="left" on="sidebarClose:hamburger.toggleClass(class=clicked)">
+  <a class="container" href="#architecture" on="tap:accordion.expand(section='architecture'),architecture.scrollTo(duration=1000)"><h1>Architecture</h1></a>
+  <a class="container" href="#landscape" on="tap:accordion.expand(section='landscape'),landscape.scrollTo(duration=1000)"><h1>Landscape</h1></a>
+  <a class="container" href="#shows" on="tap:accordion.expand(section='shows'),shows.scrollTo(duration=1000)"><h1>Shows</h1></a>
+  <a class="container" href="#language" on="tap:accordion.expand(section='language'),language.scrollTo(duration=1000)"><h1>Language</h1></a>
+  <a class="container" href="#making" on="tap:accordion.expand(section='making'),making.scrollTo(duration=1000)"><h1>Making</h1></a>
+  <a class="container" href="#sense" on="tap:accordion.expand(section='sense'),sense.scrollTo(duration=1000)"><h1>Sense</h1></a>
+  <a class="container" href="#about" on="tap:accordion.expand(section='about'),about.scrollTo(duration=1000)"><h1>About</h1></a>
+  <a class="container cv" target="_blank"><h1>Download CV</h1></a>
+  <div class="contact"><h1>aldrich.annelise@gmail.com</h1></div>
+</amp-sidebar>
 
-</p></section>
-</article>
-</body></html>
+<header>
+  <button id="hamburger" on='tap:sidebar1.toggle, hamburger.toggleClass(class=clicked)'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="presentation"><rect x="30" y="47" width="40" height="6" rx="1" ry="1"/><rect x="30" y="36.691" width="40" height="6" rx="1" ry="1"/><rect x="30" y="57.309" width="40" height="6" rx="1" ry="1"/></svg>
+  </button>
+</header>
+
+<div class="title" on="tap:sidebar1.toggle,hamburger.toggleClass(class=clicked)"><div class="titleThin">Annie Aldrich:</div> Collected Works</div>
+<div class="spacer" id="topPage"></div>
+<div class="background">
+  <amp-img alt="Background Art"
+    src="img/title2.jpg"
+    layout="fill">
+</div>
+
+<amp-accordion id="accordion" disable-session-states expand-single-section>
+
+<section id="architecture" on="expand:architecture.scrollTo(duration=1000)">
+      <header class="sectionTitle"><h1>Architecture</h1></header>
+
+      <article>
+
+      <p>Location: 48.74&deg; N, 123.46&deg; W<br>Salt Spring Island, BC<br><br>Use: Full-time Home<br><br>Lot Size: 7.65 acres<br><br>Target Footprint: 5,000 SF<br><br>Design Duration: 11 months</p>
+
+      <figure class="small">
+        <amp-img alt="First Sketch"
+          src="img/sm01_800.webp"
+          width="1600"
+          height="787"
+          srcset="img/sm01_1600.webp 1600w,
+                  img/sm01_1000.webp 1000w,
+                  img/sm01_800.webp 800w"
+          layout="responsive">
+          <amp-img fallback alt="First Sketch"
+            src="img/sm01_800.jpg"
+            width="1600"
+            height="787"
+            srcset="img/sm01_1600.jpg 1600w,
+                    img/sm01_1000.jpg 1000w,
+                    img/sm01_800.jpg 800w"
+            layout="responsive">
+          </amp-img>
+        </amp-img>
+        <figcaption>First Sketch</figcaption>
+      </figure>
+
+      <p>&ldquo;Attaching a 2 minute sketch here. I am getting excited about the interconnected living spaces you have described, and am thinking about ways to best conceptualize this spatially.<br><br>A first thought is to elevate a series of south-facing glass structures that contain all living spaces that require light and views. Bermed (to take thermal advantage of the earth) would be spaces...that need less light. The idea would be to...let the small glass spaces sit quietly on the land without overwhelming.&rdquo;</p>
+
+    </article>
+</section>
+
+<section id="landscape" on="expand:landscape.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Landscape</h1></header>
+
+    <article>
+      <p>&ldquo;Attaching a 2 minute sketch here. I am getting excited about the interconnected living spaces you have described, and am thinking about ways to best conceptualize this spatially.<br><br>A first thought is to elevate a series of south-facing glass structures that contain all living spaces that require light and views. Bermed (to take thermal advantage of the earth) would be spaces...that need less light. The idea would be to...let the small glass spaces sit quietly on the land without overwhelming.&rdquo;</p>
+    </article>
+</section>
+
+<section id="shows" on="expand:shows.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Shows</h1></header>
+
+    <article>
+      <p>&ldquo;Attaching a 2 minute sketch here. I am getting excited about the interconnected living spaces you have described, and am thinking about ways to best conceptualize this spatially.<br><br>A first thought is to elevate a series of south-facing glass structures that contain all living spaces that require light and views. Bermed (to take thermal advantage of the earth) would be spaces...that need less light. The idea would be to...let the small glass spaces sit quietly on the land without overwhelming.&rdquo;</p>
+    </article>
+</section>
+
+<section id="making" on="expand:making.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Making</h1></header>
+
+    <article>
+      <p>&ldquo;Attaching a 2 minute sketch here. I am getting excited about the interconnected living spaces you have described, and am thinking about ways to best conceptualize this spatially.<br><br>A first thought is to elevate a series of south-facing glass structures that contain all living spaces that require light and views. Bermed (to take thermal advantage of the earth) would be spaces...that need less light. The idea would be to...let the small glass spaces sit quietly on the land without overwhelming.&rdquo;</p>
+    </article>
+</section>
+
+<section id="language" on="expand:language.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Language</h1></header>
+
+    <article>
+      <p>&ldquo;Attaching a 2 minute sketch here. I am getting excited about the interconnected living spaces you have described, and am thinking about ways to best conceptualize this spatially.<br><br>A first thought is to elevate a series of south-facing glass structures that contain all living spaces that require light and views. Bermed (to take thermal advantage of the earth) would be spaces...that need less light. The idea would be to...let the small glass spaces sit quietly on the land without overwhelming.&rdquo;</p>
+    </article>
+</section>
+
+<section id="sense" on="expand:sense.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Sense</h1></header>
+
+    <article>
+      <p>&ldquo;Attaching a 2 minute sketch here. I am getting excited about the interconnected living spaces you have described, and am thinking about ways to best conceptualize this spatially.<br><br>A first thought is to elevate a series of south-facing glass structures that contain all living spaces that require light and views. Bermed (to take thermal advantage of the earth) would be spaces...that need less light. The idea would be to...let the small glass spaces sit quietly on the land without overwhelming.&rdquo;</p>
+    </article>
+</section>
+
+<section id="about" on="expand:about.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>About</h1></header>
+
+    <article>
+      <p>&ldquo;Attaching a 2 minute sketch here. I am getting excited about the interconnected living spaces you have described, and am thinking about ways to best conceptualize this spatially.<br><br>A first thought is to elevate a series of south-facing glass structures that contain all living spaces that require light and views. Bermed (to take thermal advantage of the earth) would be spaces...that need less light. The idea would be to...let the small glass spaces sit quietly on the land without overwhelming.&rdquo;</p>
+    </article>
+</section>
+
+</amp-accordion>
+</body>
+</html>
