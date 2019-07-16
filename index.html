@@ -13,224 +13,224 @@
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 <style amp-custom>
-html,body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  color:#16161d;
-  text-rendering:optimizeLegibility;
-  background:#f7f7fa;
-  overflow-y:scroll;
-}
-a{
-  color:inherit;
-  font-style:inherit;
-  text-decoration: inherit;
-  outline:none;
-  font-weight:inherit;
-  border-bottom: .5px dashed #aaa;
-}
-a:hover {
-  background: #eee;
-}
-::selection {
-  background-color: #eee;
-}
-::-moz-selection {
-  background-color: #eee;
-}
-.spacer{
-  height:54.5vh;
-}
-header {
-  position: fixed;
-  top:0;
-  z-index:20;
-  width:13vh;
-}
-nav{
-}
-section{
-  margin:0;
-  padding:0;
-}
-article{
-  margin:0;
-  padding:0;
-  background:#f7f7fa;
-}
-.title{
-  position:absolute;
-  top:3.8vh;
-  width:calc(100% - 20vh);
-  font-size: 4.4vh;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin:0 10vh;
-  padding:0;
-  text-align: center;
-  z-index:10;
-  color:#fff;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-}
-.titleThin{
-  font-weight:300;
-}
-h1{
-  font-size: 2vh;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin:0;
-  padding:0;
-}
-p{
-  font-size: 2vh;
-  margin:18vh auto;
-  width:92%;
-  max-width:800px;
-  font-weight:300;
-  color:#16161d;
-}
-p.uppercase {
+  html,body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color:#16161d;
+    text-rendering:optimizeLegibility;
+    background:#f7f7fa;
+    overflow-y:scroll;
+  }
+  a{
+    color:inherit;
+    font-style:inherit;
+    text-decoration: inherit;
+    outline:none;
+    font-weight:inherit;
+    border-bottom: .5px dashed #aaa;
+  }
+  a:hover {
+    background: #eee;
+  }
+  ::selection {
+    background-color: #eee;
+  }
+  ::-moz-selection {
+    background-color: #eee;
+  }
+  .spacer{
+    height:54.5vh;
+  }
+  header {
+    position: fixed;
+    top:0;
+    z-index:20;
+    width:13vh;
+  }
+  nav{
+  }
+  section{
+    margin:0;
+    padding:0;
+  }
+  article{
+    margin:0;
+    padding:0;
+    background:#f7f7fa;
+  }
+  .title{
+    position:absolute;
+    top:3.8vh;
+    width:calc(100% - 20vh);
+    font-size: 4.4vh;
+    font-weight: 700;
     text-transform: uppercase;
-}
-amp-img.cover img {
-  object-fit: cover;
-}
-.sectionTitle{
-  height:6.5vh;
-  line-height:6.5vh;
-  text-align: center;
-  vertical-align: middle;
-  width:100%;
-  margin:0;
-  color:#fff;
-  background:none;
-  border-top:none;
-  border-bottom: .5px solid #f7f7fa;
-  border-left: calc(50vw - 14vh) solid transparent;
-  border-right: calc(50vw - 14vh) solid transparent;
-  box-sizing: border-box;
-  z-index:10;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-section[expanded] > .sectionTitle {
-  border:none;
-  background:#f7f7fa;
-  color:#16161d;
-  border-bottom: .5px solid #16161d;
-  border-left: calc(50vw - 14vh) solid transparent;
-  border-right: calc(50vw - 14vh) solid transparent;
-  outline:none;
-}
-section:hover > .sectionTitle{
-  background:#f7f7fa;
-  color:#16161d;
-  outline:none;
-}
-.sectionTitle:focus{
-  outline:none;
-}
-figure {
-  margin:18vh auto;
-  width:92%;
-  max-width:800px;
-}
-figure img{
-  border-radius:3px;
-}
-figcaption{
-  font-size: 14px;
-  text-align: right;
-  text-transform: uppercase;
-  margin-top:8px;
-  font-weight: 700;
-  opacity:0;
-  transition: all .1s;
-  transition-timing-function: ease-in-out;
-}
-figure:hover figcaption{
-  opacity:1;
-}
-amp-sidebar{
-  width: 80vw;
-  background:#fff;
-  margin:0;
-  padding:0;
-}
-button {
+    margin:0 10vh;
+    padding:0;
+    text-align: center;
+    z-index:10;
+    color:#fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .titleThin{
+    font-weight:300;
+  }
+  h1{
+    font-size: 2vh;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin:0;
+    padding:0;
+  }
+  p{
+    font-size: 2vh;
+    margin:18vh auto;
+    width:92%;
+    max-width:800px;
+    font-weight:300;
+    color:#16161d;
+  }
+  p.uppercase {
+      text-transform: uppercase;
+  }
+  amp-img.cover img {
+    object-fit: cover;
+  }
+  .sectionTitle{
+    height:6.5vh;
+    line-height:6.5vh;
+    text-align: center;
+    vertical-align: middle;
+    width:100%;
+    margin:0;
+    color:#fff;
+    background:none;
+    border-top:none;
+    border-bottom: .5px solid #f7f7fa;
+    border-left: calc(50vw - 14vh) solid transparent;
+    border-right: calc(50vw - 14vh) solid transparent;
+    box-sizing: border-box;
+    z-index:10;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  section[expanded] > .sectionTitle {
+    border:none;
+    background:#f7f7fa;
+    color:#16161d;
+    border-bottom: .5px solid #16161d;
+    border-left: calc(50vw - 14vh) solid transparent;
+    border-right: calc(50vw - 14vh) solid transparent;
+    outline:none;
+  }
+  section:hover > .sectionTitle{
+    background:#f7f7fa;
+    color:#16161d;
+    outline:none;
+  }
+  .sectionTitle:focus{
+    outline:none;
+  }
+  figure {
+    margin:18vh auto;
+    width:92%;
+    max-width:800px;
+  }
+  figure img{
+    border-radius:3px;
+  }
+  figcaption{
+    font-size: 14px;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top:8px;
+    font-weight: 700;
+    opacity:0;
+    transition: all .1s;
+    transition-timing-function: ease-in-out;
+  }
+  figure:hover figcaption{
+    opacity:1;
+  }
+  amp-sidebar{
+    width: 80vw;
+    background:#fff;
+    margin:0;
+    padding:0;
+  }
+  button {
+      position:fixed;
+      top:0;
+      left:0;
+      background:none;
+      border: none;
+      width:13vh;
+      height:13vh;
+      display: inline-block;
+      outline:none;
+      z-index:50;
+  }
+  button svg{
+      fill:#fff;
+      transition:all .3s;
+      cursor:pointer;
+  }
+  button:hover svg{
+       transform: rotate(90deg);
+  }
+  button.clicked svg{
+      transform:rotate(90deg);
+      transition:all .3s;
+  }
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#16161d;
+    padding:3vh;
+  }
+  .container:hover {
+    background-color: #eee;
+  }
+  .contact {
+    position: absolute;
+    bottom:0;
+    width:100%;
+    padding:3vh;
+  }
+  .cv {
+    position: absolute;
+    bottom:8vh;
+    width:100%;
+  }
+  .background{
     position:fixed;
     top:0;
     left:0;
-    background:none;
-    border: none;
-    width:13vh;
-    height:13vh;
-    display: inline-block;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100vh;
+  }
+  .background img{
+    object-fit:cover;
     outline:none;
-    z-index:50;
-}
-button svg{
-    fill:#fff;
-    transition:all .3s;
-    cursor:pointer;
-}
-button:hover svg{
-     transform: rotate(90deg);
-}
-button.clicked svg{
-    transform:rotate(90deg);
-    transition:all .3s;
-}
-.container {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color:#16161d;
-  padding:3vh;
-}
-.container:hover {
-  background-color: #eee;
-}
-.contact {
-  position: absolute;
-  bottom:0;
-  width:100%;
-  padding:3vh;
-}
-.cv {
-  position: absolute;
-  bottom:8vh;
-  width:100%;
-}
-.background{
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100vh;
-}
-.background img{
-  object-fit:cover;
-  outline:none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 </style>
 <script type="application/ld+json">{
   "@context": "http://schema.org/",
@@ -295,7 +295,7 @@ button.clicked svg{
 	 <a href="https://www.archdaily.com/903828/olson-kundigs-hydro-solar-generator-proposal-could-power-200-melbourne-homes" target="_blank">Arch Daily</a></p>
 
 	<p>SKETCH SHED<br>
-	      For my friend, the builder-farmer, I modeled and rendered this backyard garden shed, using reclaimed timber components.
+	      For my friend, a builder-farmer, I modeled and rendered this backyard garden shed, using reclaimed timber components.
 	<figure class="small">
         <amp-img alt="Garden Shed Perspective"
           src="img/GardenShed2.jpg"
@@ -444,7 +444,36 @@ button.clicked svg{
     <article>
       <p>CRAFT</p>
 	<p>GATHERINGS</p>
-	<p>FOOD</p>
+	<p>FOOD<br>
+      THe manual process of creating things from earth's abundant bounty is one of the great gifts I enjoy in life.<br>
+  <figure class="small">
+    <amp-img alt="DRAGON CAKE"
+      src="img/Dragon1.jpg"
+      width="2794"
+      height="2794"
+      layout="responsive">
+    </amp-img>
+    <figcaption>Zucchini-Chocolate Dragon Cake, for a five-year old boy.</figcaption>
+  </figure>
+  <figure class="small">
+    <amp-img alt="DRAGON CAKE"
+      src="img/Dragon2.jpg"
+      width="4032"
+      height="3024"
+      layout="responsive">
+    </amp-img>
+    <figcaption>Almond teeth, green cream-cheese frosting. Fire-breathing, of course.</figcaption>
+  </figure>
+  <figure class="small">
+    <amp-img alt="DRAGON CAKE"
+      src="img/Dragon3.jpg"
+      width="4032"
+      height="3024"
+      layout="responsive">
+    </amp-img>
+    <figcaption>Chocolate shavings and chocolate bark, flesh out his scaly exterior.</figcaption>
+  </figure>
+</p>
     </article>
 </section>
 
